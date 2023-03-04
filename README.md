@@ -1,0 +1,3 @@
+In FastAPI, when you define a dependency that returns a database session, you can use yield instead of return to create a context manager for the session. This ensures that the session is properly closed and cleaned up after the request is complete.
+
+Using yield instead of return in this way is a recommended best practice in FastAPI to ensure that database sessions are properly cleaned up and that you avoid issues like connection leaks or database deadlocks.
